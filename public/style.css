@@ -1,0 +1,42 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    width: 100%;
+    background-color: rgb(15, 202, 156);
+    color: white;
+}
+nav h1 {
+    margin: 0;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul {
+    margin: 0;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+nav li {
+    display: inline-block;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(3, 122, 77);
+    color: white;
+}
+.clear {
+    clear: both;
+}
+.container {
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+}
