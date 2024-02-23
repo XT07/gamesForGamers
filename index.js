@@ -7,6 +7,7 @@ const loginAuth = require("./midolowares/loginAuth");
 const connection = require("./database/database");
 const gamesControler = require("./games/gamesControler");
 const partnersControler = require("./partners/partnersControler");
+const userControler = require("./user/userControler");
 
 connection
     .authenticate()
@@ -24,13 +25,14 @@ app.use(bodyParser.json());
 
 app.use("/", gamesControler);
 app.use("/", partnersControler);
+app.use("/", userControler);
 
 app.get("/", (req, res) => {
-    res.render("home")
+    res.render("home");
 })
 
 app.get("/about", (req, res) => {
-    res.send("nada aqui ainda")
+    res.render("about");
 })
 
 app.listen(8080, () => {

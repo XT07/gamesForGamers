@@ -31,6 +31,4 @@ const users = connection.define("users", {
 
 users.sync({ force: false }).then(() => {
     console.log("Tabela usuários atualizada");
-}).cathc(err => {
-    console.log(err);
 })
