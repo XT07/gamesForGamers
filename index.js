@@ -18,6 +18,11 @@ connection
         console.log(err)
     })
 
+app.use(session({
+    secret: "sdwdjsadjwijdasd417ad4saw",
+    cokkie: 2592000000
+}))
+
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
