@@ -32,3 +32,5 @@ const users = connection.define("users", {
 users.sync({ force: false }).then(() => {
     console.log("Tabela usuários atualizada");
 })
+
+module.exports = users;
